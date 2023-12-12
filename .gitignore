@@ -26,7 +26,25 @@
 *.a
 *.lib
 
+#Open-CV
+OpenCV_451/
+
 # Executables
 *.exe
 *.out
 *.app
+
+# Visual Studio files
+.vs/
+*.sdf
+*.opensdf
+*.suo
+*.vcxproj.user
+*.vcxproj.filters
+*.pdb
+
+#Log files
+*.log
+*.tlog
+
+Debug/
