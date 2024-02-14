@@ -29,6 +29,7 @@ private:
 	IObserverPtr gamePtr;
 	std::shared_ptr<std::vector<EntityPtr>> shelfs;
 	bool isOnShelf = false;
+	bool isToExit = false;
 public:
 	Game(int width, int height);
 	void run();

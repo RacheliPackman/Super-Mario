@@ -70,7 +70,7 @@ void Game::run()
 	hero->Register(hero);
 	hero->Register(gamePtr);
 
-	bool isToExit = false;
+	
 	while (false == isToExit)
 	{
 		cv::Mat canvas = background.clone();
@@ -212,4 +212,15 @@ void Game::onNotify(Event const& e)
 			}
 
 	}
+
+	if (e.sender == EventSenders::SENDER_KEYBOARD
+		&&
+		e.type == EventTypes::EVENT_KEY_PRESSED
+		&&
+		e.code == EventCodes::KEY_ESC)
+	{
+		isToExit = true;
+	}
+
+
 }
